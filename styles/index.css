@@ -1,0 +1,191 @@
+.body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(-45deg, #0178ff 0%, #1b2bc7 40%, #1b2bc7 60%, #1b2bc7 100%);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main, .row-container {
+    height: 100%;
+}
+
+.main-holder {
+    position: relative;
+    height: 100%;
+}
+
+.main { 
+    margin: 0;
+}
+
+.weather-serach {
+    height: 90%;
+    position: absolute;
+    top: 10%;
+    background-color: #070450;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.search {
+    gap: 10px;
+    display: flex;
+    font-size: 0.7em;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.search .serach-line img {
+    width: 1.4em;
+}
+
+.search .burg-menu img {
+    width: 3em;
+}
+
+.logo-text {
+    font-weight: 600;
+}
+
+.weather-sercher-main {
+    height: 70%;
+    border-radius: 15px;
+    background-color: #101238;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    max-height: 470px;
+    min-height: 470px;
+}
+
+.search-holder {
+    height: 60%;
+}
+
+.search-holder-elems {
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 50px 0;
+    
+}
+
+.search-holder-elems div {
+    margin-top: 50px;
+    position: relative;
+}
+.search-holder-elems div input {
+    width: 60%;
+    font-size: 0.8em;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 100px;
+    border: none;
+    padding-right: 40px;
+
+}
+
+
+.search-icon {
+    position: absolute;
+    right: 115px;
+    top: 12px;
+}
+
+.ciy-card {
+    height: 40%;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.208);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgb(164, 164, 164);
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 100px);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px 0;
+
+}
+
+.temperature {
+    font-size: 4em;
+    position: relative;
+}
+
+.ciy-card img {
+    width: 1.5em;
+}
+
+.celcie {
+    font-size: 0.2em;
+    position: absolute;
+    top: 10px;
+    right: -15px;
+}
+
+.left {
+    transform: rotate(-15deg);
+    left: calc(35% - 100px);
+    bottom: -55px;
+    z-index: 1;
+}
+
+.right {
+    transform: rotate(15deg);
+    left: calc(65% - 100px);
+    bottom: -55px;
+    z-index: 1;
+}
+
+.center {
+    z-index: 2;
+}
+
+.burg-menu {
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.prop-menu-outher {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -100%;
+    right: 0;
+    width: fit-content;
+    height: fit-content;
+    background-color: #080486;
+    z-index: 1;
+}
+
+.menu-option {
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    min-width: 30px;
+    min-height: 15px;
+}
+
+
+
+

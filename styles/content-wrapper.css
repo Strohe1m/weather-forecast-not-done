@@ -1,0 +1,134 @@
+.content-wrapper {
+    height: 550px;
+    width: 700px;
+    position: fixed;
+    top: calc(50% - 275px);
+    left: calc(50% - 350px);
+    z-index: 3;
+    box-sizing: border-box;
+}
+
+.inner-part {
+    user-select: none;
+    background-color: #000f6d;
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+    border: 1px #00083e;
+    overflow: hidden;
+}
+
+.upper-part {
+    position: relative;
+    padding: 0;
+}
+
+.upper-part .description-text, .close {
+    font-size: larger;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 88.8px;
+    height: 88.8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.close img {
+    width: 24px;
+}
+
+.weather-icon {
+    width: 200px;
+    height: 175px;
+    position: absolute;
+    top: calc(50% - 67.5px);
+    left: calc(50% - 100px);
+}
+
+.upper-holder {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    background-color: #00083e;
+    width: 100%;
+    position: relative;
+}
+
+/* ___________________________ hovers upper part _______________ */
+
+.close:hover {
+    /*background-color: rgba(255, 0, 0, 0.241);*/
+    box-shadow: inset 0px 0px 80px rgba(255, 0, 0, 0.373);
+}
+
+
+/* ___________________________________- lower-part              */
+
+.lower-part-content {
+    position: relative;
+}
+
+.addtiional-feels-like, .additional-wind-speed {
+    position: absolute;
+    transition: all 0.3s;
+}
+
+.hidden-elem {
+    bottom: -100%;
+}
+
+.lower-part {
+    position: relative;
+    padding: 0;
+    background-color: #00083e;
+}
+
+.center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    flex-direction: column;
+}
+
+.arrow-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.city-name {
+    display: block;
+}
+
+.weather-description, .weather-value {
+    flex-direction: column;
+    font-size: xx-large;
+}
+
+.arrow {
+    width: 33px;
+}
+
+.x-center {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ____________________ hovers lower-part  __________________________*/
+
+.arrow-button:hover {
+    background-color: rgba(255, 255, 255, 0.241);
+}
